@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# This script uses:
+# - `#!/usr/bin/env bash` for portability purposes:
+#   https://en.wikipedia.org/wiki/Shebang_%28Unix%29#Portability
+#
+# - Google Shell Style Guide:
+#   https://google.github.io/styleguide/shell.xml
+
+# TODO: implement generic deployment script
