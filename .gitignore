@@ -1,0 +1,28 @@
+# Env-specific resources
+env/wp-config-local.php
+env/uploads/*
+!env/uploads/.gitkeep
+
+# OS garbage
+.DS_Store*
+.vagrant
+*.7z
+*.com
+*.dmg
+*.class
+*.dll
+*.exe
+*.gz
+*.iso
+*.jar
+*.log
+*.o
+*.rar
+*.so
+*.sql
+*.sqlite
+*.tar
+*.zip
+ehthumbs.db
+Icon\?
+Thumbs.db
