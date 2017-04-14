@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Google Shell Style Guide: https://google.github.io/styleguide/shell.xml
+
+(
+  function wpb_install_macos {
+    if [[ "`brew -v`" =~ 'Homebrew' ]]; then
+      brew install wp-cli
+    else
+      echo 'Unable to install WP-CLI.' \
+        'Please install and configure Homebrew before running this script:'
+      echo 'https://brew.sh'
+      exit 1
+    fi
+  }
+
+  function wpb_main {
+    if [[ "`uname`" =~ 'Darwin' ]]; then
+      install_macos
+    fi
+  }
+
+  wpb_main
+)
